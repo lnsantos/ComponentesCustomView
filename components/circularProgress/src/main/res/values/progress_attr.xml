@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularProgress">
+        <attr name="circularMaxProgressBackgroundColor" format="color" />
+        <attr name="circularDisableBackgroundColor" format="color"/>
+        <attr name="circularBackgroundColor" format="color"/>
+        <attr name="circularProgressBackgroundColor" format="color"/>
+        <attr name="circularSizeBackground" format="float" />
+        <attr name="circularSizeProgressBackground" format="float" />
+        <attr name="circularProgress" format="float" />
+    </declare-styleable>
+</resources>

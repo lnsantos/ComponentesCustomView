@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.lnsantos.circular_text_view.CircularTextView
-        android:id="@+id/uuh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="16dp"
-        android:text="1569"
-        android:textColor="#fff"
-        android:textSize="16sp"
-        app:backgroundCircular="@color/teal_700"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <com.lnsantos.circularprogress.CircularProgress
+        android:id="@+id/progress_circular"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        app:circularBackgroundColor="#474747"
+        app:circularDisableBackgroundColor="#DDDDDD"
+        tools:circularProgress="100"
+        app:circularProgress="0"
+        app:circularMaxProgressBackgroundColor="#00FF09"
+        app:circularSizeBackground="30.0"
+        app:circularSizeProgressBackground="20.0"
+        app:circularProgressBackgroundColor="#2196F3"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginTop="34dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_circular"
+        android:layout_margin="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
